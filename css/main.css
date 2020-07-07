@@ -13,3 +13,43 @@ body {
   background-size: 100% 100%;
   text-align: center;
 }
+
+.about_content h1 {
+  color:red;
+  font-family: "Courier", monospace;
+  font-size:6vw;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.about_content p {
+  color: white;
+  font-family: "Courier", monospace;
+  font-size:18px;
+  text-align: left;
+}
+.about_content b {
+  color: red;
+  font-family: "Courier", monospace;
+  font-size:22px;
+  text-align: left;
+}
+
+#about_me {
+  font-family: "Courier", monospace;
+  margin: auto auto;
+  padding-bottom:30px;
+  width:70vmin;
+}
+
+#email {
+    text-align: center;
+}
+
+.colorlink {
+    font-family: "Courier", monospace;
+    text-decoration: none;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
