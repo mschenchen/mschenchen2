@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Ms Chenchen</title>
+    <link rel="stylesheet" href="{{ url_for('css', filename='main.css') }}"/>
+    <!-- importing static/fx.js -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+                                   user-scale=no, minimum-scale=1,
+                                   maximum-scale=1">
+    <style>
+      body {
+         background-color: #CCECEA;
+      }
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 650px;
+        padding: 20px;
+        background-image: url('images/blackboard3.png');
+        background-size: 100% 100%;
+        text-align: center;
+      }
+
+      h1 {
+        color:red;
+        font-family: "Courier", monospace;
+        font-size:6vw;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      p {
+        color: white;
+        font-family: "Courier", monospace;
+        font-size:18px;
+        text-align: left;
+      }
+      b {
+        color: red;
+        font-family: "Courier", monospace;
+        font-size:22px;
+        text-align: left;
+      }
+
+      #about_me {
+        font-family: "Courier", monospace;
+        margin: auto auto;
+        padding-bottom:30px;
+        width:70vmin;
+      }
+
+      #email {
+          text-align: center;
+      }
+
+      .colorlink {
+          font-family: "Courier", monospace;
+          text-decoration: none;
+          color: red;
+          text-align: center;
+          font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <br>
+      <h1>
+        About Me
+      </h1>
+      <div id="about_me">
+          <p>
+            Hello, welcome to Ms. Chenchen's English classroom.
+          </p>
+          <p>
+            <b>Want to learn English?</b>
+          </p>
+          <p>
+            Feel free to download my English videos, and improve your listening
+            and speaking skills while learning interesting knowledge.
+          </p>
+
+          <p>
+            <b>Personalized guidance? Yes!</b>
+          </p>
+          <p>
+            I provide 1-on-1 online English class for beginners to advanced,
+            as well as TOEFL and IELTS speaking training. Through a personalized
+            program, I will guide you to become fluent in English.
+          </p>
+          <p>
+            If you are interested in my 1-on-1 class, please send me an email.
+          </p>
+        </div>
+
+        <div id="email">
+          <a class="colorlink" href="mailto:ms.chenchen@outlook.com">
+            Send Email
+          </a>
+        </div>
+      </div>
+  </body>
+</html>
