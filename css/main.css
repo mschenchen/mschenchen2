@@ -41,6 +41,7 @@ body {
   margin: auto auto;
   padding-bottom:20px;
   width:70vmin;
+  height: 350px;
   overflow: scroll;
 }
 
