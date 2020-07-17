@@ -4,15 +4,12 @@
   <head>
     <meta charset="utf-8"/>
     <title>Ms Chenchen</title>
-    <link rel="stylesheet" href="{{ url_for('css', filename='main.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"/>
     <!-- importing static/fx.js -->
     <meta name="viewport" content="width=device-width, initial-scale=1,
                                    user-scale=no, minimum-scale=1,
                                    maximum-scale=1">
     <style>
-      body {
-         background-color: #CCECEA;
-      }
       .content {
         position: absolute;
         top: 50%;
@@ -21,10 +18,9 @@
         width: 70%;
         height: 600px;
         padding: 20px;
-        background-image: url('images/blackboard3.png');
+        background-image: url('static/blackboard3.png');
         background-size: 100% 100%;
         text-align: center;
-        overflow: scroll;
       }
 
       h1 {
@@ -50,10 +46,16 @@
         display: inline-block;
         text-decoration: none;
       }
-      #about {
+      #aboutlk {
         color: white;
         display: inline-block;
         text-decoration: none;
+      }
+      #termlk {
+        color: grey;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
       }
 
       .navili {
@@ -62,8 +64,15 @@
         line-height: 2;
         text-align: left;
       }
+      .terms {
+        position: absolute;
+	      bottom: 10px;
+        left: 47%;
+        text-align: center;
+      }
     </style>
   </head>
+
   <body>
     <div class="content">
       <br>
@@ -72,17 +81,21 @@
       </h1>
       <div id="site_desc">
         <div class="navili">
-          <div class="navili">
-            <a id=dwnld href="http://cdn.mschenchen.com:9000/catalog" title="Digital Catalog">
-              <li>Download English lessons</li>
+            <a id=dwnld href="/catalog" title="Digital Catalog">
+              <li>Download English Lessons</li>
             </a>
             <br>
-            <a id=about href="/about" title="About Me">
+            <a id=aboutlk href="/about" title="About Me">
               <li>About Me</li>
             </a>
-
         </div>
       </div>
+    </div>
+
+    <div class="terms">
+      <a id=termlk href="/terms" title="Terms">
+        Terms of Service
+      </a>
     </div>
   </body>
 </html>
